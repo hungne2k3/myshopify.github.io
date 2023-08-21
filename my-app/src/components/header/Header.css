@@ -1,0 +1,385 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap');
+
+:root {
+  --font-family-default: 'Jost', sans-serif;
+}
+
+/* Header */
+.main-heade {
+    background-color: #fff;
+}
+
+.header-top,
+.header-list {
+    width: 92%;
+    margin: 0 auto;
+}
+
+.row, .header-contact, .header-infor,
+.header-cu-lang {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 6px 0;
+}
+
+.row-2 {
+    display: flex;
+}
+
+.item-contact:first-child {
+    margin-right: 20px
+}
+
+.icon-contact {
+    padding-right: 10px;
+}
+
+.item-contact a {
+    font-family: var(--font-family-default);
+    font-size: 14px;
+    color: #000;
+    text-decoration: none;
+}
+
+.text-conent {
+    margin-right: -80px;
+}
+
+.text-conent strong {
+    font-family: var(--font-family-default);
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.text-conent a {
+    color: #000;
+    font-size: 12px;
+    text-decoration: none;
+    font-family: var(--font-family-default);
+
+}
+
+.item-contact {
+    font-size: 14px;
+    font-family: var(--font-family-default);
+
+}
+
+.icon-location {
+    padding-right: 10px;
+}
+
+button {
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.icon {
+    padding-left: 6px;
+}
+
+.footer-language {
+    margin-right: 10px;
+}
+
+.dropdown-toggle,
+.dropdown-toggle-money {
+    position: relative;
+}
+
+.dropdown-menu {
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #e8e8e8;
+    /* width: 80px; */
+    top: 61px;
+    right: 114px;
+    transform: translateX(-20%);
+    cursor: pointer;
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.8);
+    z-index: 10;
+}
+
+.money__item,
+.lang__item {
+    padding: 6px 12px;
+    text-align: center;
+}
+
+.money__item:hover,
+.lang__item:hover {
+    background-color: #bbb;
+}
+
+.money__item:nth-child(1),
+.lang__item:nth-child(1) {
+    border-bottom: 1px solid #bbb;
+}
+
+.money__item:nth-child(2),
+.lang__item:nth-child(2) {
+    border-bottom: 1px solid #bbb;
+}
+
+.hidden {
+    display: none;
+}
+
+.dropdown-menu-money {
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #e8e8e8;
+    /* width: 80px; */
+    top: 61px;
+    right: 54px;
+    transform: translateX(-20%);
+    cursor: pointer;
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.8);
+    z-index: 10;
+}
+
+.boder {
+    width: 100%;
+    border: 1px solid #e8e8e8;
+}
+
+/* header-list */
+.header-list {
+    position: sticky;
+    top: 0;
+    height: 52px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px auto;
+    z-index: 999;
+}
+
+.nav {
+    width: 612px;
+}
+
+.nav-list {
+    padding-left: 0;
+}
+
+.nav-list-item {
+    display: inline-block;
+}
+
+#home {
+    color: #fb5300;
+}
+
+.nav-link {
+    font-weight: 900;
+    font-size: 16px;
+    font-family: var(--font-family-default);
+    color: #000;
+    text-decoration: none;
+    padding: 21px 20px 21px 0px;
+}
+
+.nav-collections {
+    position: relative;
+}
+
+.nav-link:hover {
+    color: #fb5300;
+}
+
+/* nav lv1 */
+.site-nav--fw .nav-dropdown--lv1 {
+    width: 100%;
+    left: 0;
+    transform: translateX(0);
+}
+
+.megaMenu {
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 30px 0;
+    padding-left: 40px;
+    padding-right: 30px;
+    width: 100%;
+}
+
+.nav-dropdown--lv1 {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    margin: 0;
+    background-color: #fff;
+    top: 136%;
+    /* top: calc(100% + 20px); */
+    box-shadow: 0 10px 10px rgba(0,0,0,0.05);
+    border-top: 1px solid rgba(231, 232, 235, 0.6);
+    transition: all 0.3s linear;
+    z-index: 7;
+}
+
+.site-nav--fw .megaMenu .site-nav__mega--content {
+    max-width: 1510px;
+    margin: auto;
+}
+
+.site-nav--fw:hover .nav-dropdown--lv1{
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.3s linear;
+    pointer-events: auto;
+}
+
+.row-1 {
+    display: flex;
+    /* align-items: baseline; */
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.site-nav--MenuLinks {
+    list-style: none;
+    padding-left: 0;
+}
+
+.site-nav--MenuLinks li {
+    padding-bottom: 20px;
+}
+
+.site-nav--MenuLinks li a:hover {
+    color: #fb5300;
+}
+
+.site-nav__link--title a {
+    font-size: 22px;
+    font-weight: 600;
+    color: #000;
+    text-decoration: none;
+}
+
+.site-nav__link {
+    color: #000;
+    text-decoration: none;
+    text-align: left;
+}
+
+.col-4 {
+    margin-right: 120px;
+}
+
+.logo {
+    margin-left: -280px;
+    max-width: 165px;
+}
+
+.logo img {
+    max-width: 100%;
+}
+
+.header-group-item {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.search__btn-overlay,
+.site-header_myaccount,
+.header--wishlist {
+    margin-right: 26px;
+}
+
+.search__btn-overlay:hover,
+.site-header_myaccount:hover,
+.header--wishlist:hover,
+.cart_canvas:hover {
+    color: #fb5300;
+}
+
+.icon-header {
+    font-size: 20px;
+    padding-right: 10px;
+}
+
+.cart,
+.heart {
+    position: relative;
+}
+
+.header-number {
+    position: absolute;
+    top: 6px;
+    right: 140px;
+    background-color: #000;
+    color: #fff;
+    padding: 0px 6px;
+    border-radius: 50%;
+    font-size: 12px;
+    z-index: 10;
+}
+
+.header-Cart {
+    position: absolute;
+    top: 6px;
+    right: 28px;
+    background-color: #000;
+    color: #fff;
+    padding: 0px 6px;
+    border-radius: 50%;
+    font-size: 12px;
+}
+
+.nav-header {
+    border-radius: 4px;
+}
+
+.text-uppercase--header {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.respone_image {
+    margin-top: 10px;
+}
+
+.product__title a {
+    color: #000;
+    text-decoration: none;
+}
+
+.MenuDefault {
+    min-width: -webkit-max-content;
+    min-width: -moz-max-content;
+    min-width: max-content;
+    width: 270px
+}
+
+.nav--1:hover .nav-dropdown--lv1 {
+    opacity: 1;
+    visibility: visible;
+    z-index: 10;
+    transition: all 0.3s linear;
+    pointer-events: auto;
+}
+
+.other-list {
+    padding-left: 0;
+}
+
+.other-item {
+    list-style: none;
+    padding: 10px 20px;
+}
+
+.other-item a {
+    color: #000;
+    text-decoration: none;
+}
+
+.other-item a:hover {
+    color: #fb5300;
+}

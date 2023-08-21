@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap');
+
+:root {
+    --font-family-default: 'Jost', sans-serif;
+}
+
+.banner {
+    position: relative;
+    z-index: -2;
+}
+
+.img-banner {
+    width: 100%;
+}
+
+.content {
+    position: absolute;
+    top: 288px;
+    left: 62px;
+    z-index: 0;
+}
+
+.text-uppercase--title {
+    font-size: 28px;
+    color: #000;
+    font-weight: 900;
+    font-family: var(--font-family-default);
+}
+
+.text-uppercase {
+    font-size: 80px;
+    font-family: var(--font-family-default);
+    font-weight: 900;
+}
+
+.btn {
+    font-size: 30px;
+    color: #fff;
+    background-color: #000;
+    font-family: var(--font-family-default);
+    font-weight: 600;
+    padding: 7px 14px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    color: #000;
+    background-color: palevioletred;
+}
